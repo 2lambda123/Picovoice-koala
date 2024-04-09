@@ -18,9 +18,13 @@ Koala is an on-device noise suppression engine. Koala is:
 - iOS 13.0+
 
 ## Installation
+
 <!-- markdown-link-check-disable -->
+
 The Koala iOS binding is available via [CocoaPods](https://cocoapods.org/pods/Koala-iOS). To import it into your iOS project, add the following line to your Podfile:
+
 <!-- markdown-link-check-enable -->
+
 ```ruby
 pod 'Koala-iOS'
 ```
@@ -34,6 +38,7 @@ Signup or Login to [Picovoice Console](https://console.picovoice.ai/) to get you
 ## Permissions
 
 To enable recording with your iOS device's microphone you must add the following to your app's `Info.plist` file:
+
 ```xml
 <key>NSMicrophoneUsageDescription</key>
 <string>[Permission explanation]</string>
@@ -66,7 +71,7 @@ while true {
 Replace `${ACCESS_KEY}` with yours obtained from [Picovoice Console](https://console.picovoice.ai/).
 
 The input audio must come from a single-channel stream with integer 16-bit encoding. The sample rate must be identical
-to `Koala.sampleRate`. The stream must be split into *frames* with a fixed length in samples that can be obtained
+to `Koala.sampleRate`. The stream must be split into _frames_ with a fixed length in samples that can be obtained
 from `Koala.frameLength`.
 
 The output of `koala.process()` is a frame of enhanced audio with the same 16-bit integer encoding. The delay in

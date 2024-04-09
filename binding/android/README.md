@@ -65,6 +65,7 @@ while true {
 ```
 
 In case the next audio frame does not directly follow the previous one, call `reset()`:
+
 ```java
 koala.reset();
 ```

@@ -3,8 +3,11 @@
 Made in Vancouver, Canada by [Picovoice](https://picovoice.ai)
 
 <!-- markdown-link-check-disable -->
+
 [![Twitter URL](https://img.shields.io/twitter/url?label=%40AiPicovoice&style=social&url=https%3A%2F%2Ftwitter.com%2FAiPicovoice)](https://twitter.com/AiPicovoice)
+
 <!-- markdown-link-check-enable -->
+
 [![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCAdi9sTCXLosG1XeqDwLx7w?label=YouTube&style=social)](https://www.youtube.com/channel/UCAdi9sTCXLosG1XeqDwLx7w)
 
 Koala is an on-device noise suppression engine. Koala is:
@@ -87,7 +90,6 @@ pod install
 ```
 
 Open [KoalaDemo.xcworkspace](./demo/ios/KoalaDemo/KoalaDemo.xcworkspace) and run the demo.
-
 
 ### C Demos
 

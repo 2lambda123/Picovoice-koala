@@ -8,10 +8,10 @@ Koala is an on-device noise suppression engine. Koala is:
 
 - Private; All voice processing runs locally.
 - Cross-Platform:
-    - Linux (x86_64), macOS (x86_64, arm64), and Windows (x86_64)
-    - Android and iOS
-    - Chrome, Safari, Firefox, and Edge
-    - Raspberry Pi (3, 4, 5) and NVIDIA Jetson Nano
+  - Linux (x86_64), macOS (x86_64, arm64), and Windows (x86_64)
+  - Android and iOS
+  - Chrome, Safari, Firefox, and Edge
+  - Raspberry Pi (3, 4, 5) and NVIDIA Jetson Nano
 
 ## Compatibility
 
@@ -52,7 +52,7 @@ For the web packages, there are two methods to initialize Koala.
 
 #### Public Directory
 
-**NOTE**: Due to modern browser limitations of using a file URL, this method does __not__ work if used without hosting a server.
+**NOTE**: Due to modern browser limitations of using a file URL, this method does **not** work if used without hosting a server.
 
 This method fetches the model file from the public directory and feeds it to Koala. Copy the model file into the public directory:
 
@@ -106,8 +106,8 @@ Create a `processCallback` function to get the streaming results from the engine
 ```typescript
 // Optional
 const options = {
-  processErrorCallback: (error) => {}
-}
+  processErrorCallback: error => {},
+};
 
 function processCallback(enhancedPcm: Int16Array) {
   // do something with enhancedPcm

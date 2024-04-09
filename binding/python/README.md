@@ -48,7 +48,7 @@ while True:
 
 Replace `${ACCESS_KEY}` with yours obtained from [Picovoice Console](https://console.picovoice.ai/).
 The input audio must come from a single-channel stream with integer 16-bit encoding. The sample rate must be identical
-to `koala.sample_rate`. The stream must be split into *frames* with a fixed length in samples that can be obtained
+to `koala.sample_rate`. The stream must be split into _frames_ with a fixed length in samples that can be obtained
 from `koala.frame_length`.
 
 The output of `koala.process()` is a frame of enhanced audio with the same 16-bit integer encoding. The delay in
