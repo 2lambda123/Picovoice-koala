@@ -57,7 +57,7 @@ def formatter(verbose, check_only):
     for index, c_source_file in enumerate(c_source_files):
         format_command = f"{cmd} {c_source_file}"
         try:
-            result = subprocess.check_output(format_command, shell=True, stderr=subprocess.STDOUT).decode('utf-8')
+            result = subprocess.check_output(format_command, shell=False, stderr=subprocess.STDOUT).decode('utf-8')
         except subprocess.CalledProcessError as e:
             print(f'Formatter failed with ({e.returncode}):\n{e.output.decode("utf-8")}')
             continue
