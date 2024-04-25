@@ -13,6 +13,7 @@ import os.path
 import subprocess
 import sys
 import unittest
+from security import safe_command
 
 
 class KoalaCTestCase(unittest.TestCase):
@@ -57,7 +58,7 @@ class KoalaCTestCase(unittest.TestCase):
             "-i", self._get_audio_file(audio_file_name),
             "-o", os.path.join(os.path.dirname(__file__), "output.wav")
         ]
-        process = subprocess.Popen(args, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+        process = safe_command.run(subprocess.Popen, args, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         stdout, stderr = process.communicate()
         self.assertEqual(process.poll(), 0)
         self.assertEqual(stderr.decode('utf-8'), '')
